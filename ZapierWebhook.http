@@ -1,0 +1,24 @@
+@ZapierWebhook_HostAddress = https://localhost:7061
+@ZapierNGrok_Tunnel = https://ba60-2401-7000-db24-3f00-1e3-7937-d945-f356.ngrok-free.app
+
+POST {{ZapierWebhook_HostAddress}}/api/webhook
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "RJ Norebas",
+    "email": "rj.norebas@gmail.com"
+}
+
+###
+
+POST {{ZapierNGrok_Tunnel}}/api/webhook
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "RJ Norebas",
+    "email": "rj.norebas2@gmail.com"
+}
+
+###
